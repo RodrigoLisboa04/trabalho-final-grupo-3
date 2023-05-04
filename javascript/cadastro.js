@@ -24,6 +24,7 @@ function checkInputUsername() {
     formItem.classList = "form-cont"
   }
 }
+TEST
 
 function checkInputEmail() {
   const emailValue = email.Value;
