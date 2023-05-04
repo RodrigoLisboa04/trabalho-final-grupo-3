@@ -10,7 +10,8 @@ form.addEventListener("submit", (event) => {
 
   checkInputUsername();
   checkInputEmail();
- // checkInputPassword();
+  function checkInputPassword()
+ 
 })
 
 function checkInputUsername() {
@@ -24,8 +25,6 @@ function checkInputUsername() {
     formItem.classList = "form-cont"
   }
 }
-TEST
-
 function checkInputEmail() {
   const emailValue = email.Value;
 
@@ -36,6 +35,31 @@ function checkInputEmail() {
     formItem.className = "form=cont"
   }
 }
+  
+function checkInputPassword() {
+  const passwordValue = password.value;
+  if(passwordValue ===""){
+    errorinput(password, "A senha é obrigatoria")
+  }else if(passwordValue.legth <8){
+    errorinput(password, "A senha precisa ter no mínino 8 caracteres.")
+  }else{
+    const formItem = password.parentElement;
+    formItem.className = "form-cont"
+  }
+} 
+function checkInputPasswordConfirmation(){
+  const passwordValue = password.value;
+  const confirmationPasswordvalue = passwordConfirmation.value;
+
+  if(confirmationPasswordValue ==="" ) {
+    errorinput(passwordConfirmation, "A cofirmação de senha é obrigatória.")
+  }else if(confirmationPasswordValue !== passwordValue) {
+    errorinput(passwordConfirmation, "As senhas não são iguais.")
+  }else{
+    const formItem = passwordConfirmation.parentElement;
+    formItem.className = "form-cont"
+  }
+}  
 .form-cont.error input {
     border-color: #9e6bb6;
 }
