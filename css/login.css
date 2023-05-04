@@ -1,0 +1,49 @@
+
+body{
+    background-image: url("https://cdn.discordapp.com/attachments/1081293342148661288/1103421880314110012/background.jpg");
+}
+.box-login{
+    
+    margin: auto;
+    margin-top: 200px; 
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 4px;
+    padding: auto;
+    backdrop-filter: blur(16px);
+}
+
+#logogp{
+    width: 100%;
+}
+
+.frase h1{
+    color: rgb(37, 141, 212); 
+    font-size: 35px;
+    inline-size: auto;
+    text-align: center;
+}
+
+#blocologin{
+    padding: 10px;
+}
+
+.form-group{
+    width: 95%;
+    color: #FFF;
+}
+
+.logo h1 {
+    color: var(--cor-primaria);
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pergunta-cadastro{
+    color: #FFF;
+}
+
+#btn-entrar {
+    width: 95%;
+}
