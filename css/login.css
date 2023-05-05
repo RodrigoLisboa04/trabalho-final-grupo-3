@@ -1,7 +1,3 @@
-
-body{
-    background-image: url("https://cdn.discordapp.com/attachments/1081293342148661288/1103421880314110012/background.jpg");
-}
 .box-login{
     
     margin: auto;
@@ -14,9 +10,10 @@ body{
 
 #logogp{
     width: 100%;
+
 }
 
-.frase h1{
+.frase h1, h2{
     color: rgb(37, 141, 212); 
     font-size: 35px;
     inline-size: auto;
